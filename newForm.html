@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration for an Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Registration</h1>
+    </header>
+
+    <main>
+    <form id="myForm" name="myForm" method="POST" onsubmit="return validateForm();" action="">
+        <table class="myTable">
+            <tr>
+                <td><label for="txtName">Registrant Name :</label></td>
+                <td><input class="inputStyle" type="text" id="txtFirstName" placeholder="First Name" />
+                    <input class="inputStyle" type="text" id="txtLastName" placeholder="Last Name" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="txtAddress">Address :</label></td>
+                <td><textarea class="inputStyle set-width" id="txtAddress" placeholder= "Enter you Address" rows="4" cols="40" ></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="txtCity">City :</label></td>
+                <td><input class="inputStyle set-width" type="text" id="txtCity" placeholder="Enter you City"/></td>
+            </tr>
+            <tr>
+                <td><label for="txtProvince">Province :</label></td>
+                <td><input class="inputStyle set-width" type="text" id="txtProvince" placeholder="Enter your Province"/></td>
+            </tr>
+            <tr>
+                <td><label for="txtPostalCode">Postal Code :</label></td>
+                <td><input class="inputStyle set-width" type="text" id="txtPostalCode" placeholder="A1A1A1"/></td>
+            </tr>
+            <tr>
+                <td><label for="txtPhoneNumber">Phone Number :</label></td>
+                <td><input class="inputStyle set-width" type="text" id="txtPhoneNumber" placeholder="xxx-xxx-xxxx"/></td>
+            </tr>
+            <tr>
+                <td><label for="txtEmail">Email :</label></td>
+                <td><input class="inputStyle set-width" type="text" id="txtEmail" placeholder="x@xx.xxx"/></td>
+            </tr>
+            <tr>
+                <td><label>Select Days :</label></td>
+                <td><input type="checkbox" id="chkDay1"/><label for="chkDay1">Day 1</label> 
+                <input type="checkbox" id="chkDay2"/><label for="chkDay2">Day 2</label></td>
+            </tr>
+            <tr>
+                <td><label for="txtNoUsers">Number of Users :</label></td>
+                <td><input class="inputStyle set-width" type="text" id="txtNoUsers" placeholder="no. of users"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center btn"><input id="submit" type="submit" value="SUBMIT"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center"><p id="errorMsg" class="error"></p></td>
+            </tr>
+        </table>
+    </form>
+
+    </main>
+
+    <footer>
+        <p style="align-content: center;"><a href="index.html"
+            style="font-size: 30px;color: rgb(226, 164, 164);font-weight: bold;">Back to Home</a></p>
+        <h4>All Rights Reserved @vikaramjeet</h4>
+    </footer>
+</body>
+</html>
